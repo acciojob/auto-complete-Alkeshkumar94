@@ -7,11 +7,11 @@ const fruits = ["apple", "banana", "cherry", "date", "elderberry", "fig"];
 
 const App = () => {
   const [inputValue, setInputValue] = useState('');
-  const [suggestions, setSuggestions] = useState([]);
+  const [suggestions, setSuggestions] = useState(fruits);
   
   useEffect(() => {
     if (inputValue === '') {
-      setSuggestions([]);
+      setSuggestions(fruits);
       return;
     }
     
